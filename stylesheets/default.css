@@ -1,0 +1,17 @@
+.row1 {
+  margin: auto;
+  display: inline-block;
+  top: 10px
+  right: 5px;
+}
+
+p {
+  color:red;
+  font-size: 50em;
+  font-family: Verdana;
+}
+
+#bold {
+  font-weight: bold;
+}
+

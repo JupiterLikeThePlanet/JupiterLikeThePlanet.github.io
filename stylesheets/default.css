@@ -17,7 +17,7 @@ figcaption{
 }
 
 p {
-  color:#008000;
+  color:#00A693;
   font-size: 1em;
   font-family: Helvetica;
 }
@@ -48,10 +48,11 @@ nav {
 /********************FOR LINKS*******************/
 a{
   font-family: Helvetica;
+  color: #00A693;
   }
 
 a:hover {
-  background-color: #008000;
+  background-color: #00A693;
   color:#ffffff;
   font-family: Helvetica;
   }

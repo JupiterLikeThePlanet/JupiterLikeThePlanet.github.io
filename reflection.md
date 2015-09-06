@@ -1,16 +1,16 @@
 ##Live Site:
 
-  [Home](file:///Users/bradleyjupiterbaudot/Desktop/DBC/curriculum/JupiterLikeThePlanet.github.io/blog/indexB.html "Home")
+  [Home](http://jupiterliketheplanet.github.io/blog/indexB.html "Home")
 
-  file:///Users/bradleyjupiterbaudot/Desktop/DBC/curriculum/JupiterLikeThePlanet.github.io/blog/indexB.html
+  http://jupiterliketheplanet.github.io/blog/indexB.html
 
-  [Main Blog Page](file:///Users/bradleyjupiterbaudot/Desktop/dbc/curriculum/JupiterLikeThePlanet.github.io/blog/blog.html "Main Blog Page")
+  [Main Blog Page](file:http://jupiterliketheplanet.github.io/blog/blog.html "Main Blog Page")
 
-  file:///Users/bradleyjupiterbaudot/Desktop/dbc/curriculum/JupiterLikeThePlanet.github.io/blog/blog.html
+  file:http://jupiterliketheplanet.github.io/blog/blog.html
 
-  [1st Post](file:///Users/bradleyjupiterbaudot/Desktop/DBC/curriculum/JupiterLikeThePlanet.github.io/blog/t1-git-blog.html "First Post")
+  [1st Post](http://jupiterliketheplanet.github.io/blog/t1-git-blog.html "First Post")
 
-  file:///Users/bradleyjupiterbaudot/Desktop/DBC/curriculum/JupiterLikeThePlanet.github.io/blog/t1-git-blog.html
+  http://jupiterliketheplanet.github.io/blog/t1-git-blog.html
 
 
 ##What did you learn about CSS padding, borders, and margin by doing this challenge?

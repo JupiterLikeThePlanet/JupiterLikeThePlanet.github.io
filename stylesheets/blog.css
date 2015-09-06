@@ -1,10 +1,15 @@
 header{
   font-family: Helvetica;
-  color: #aaaaaa;
+  color: #A2AFB8;
   font-size: 64px;
   margin-left: 1em;
   display:inline-block;
 }
+
+/*
+#aaaaaa
+#A2AFB8
+*/
 
 body{
   margin-left:auto;

@@ -22,11 +22,21 @@ p {
   font-family: Helvetica;
 }
 
+/*
+http://www.color-hex.com/color/
+>  #00A693
+2) #00312c
+3) #194541
+4) #2f5754
+>  #028484
+6) #047676
+*/
+
 
 h1 {
   font-family: Helvetica;
   font-weight: bold;
-  color: #aaaaaa;
+  color: #A2AFB8;
   font-size: 32px;
 }
 
@@ -64,6 +74,6 @@ a:link{
   }
 
 a:visted{
-  color: #aaaaaa;
+  color: #A2AFB8;
   }
 

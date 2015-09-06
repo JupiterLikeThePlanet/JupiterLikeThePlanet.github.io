@@ -1,66 +1,120 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <link type="text/css" rel="stylesheets" href="../stylesheets/default.css">
-
-  <title>Jupiter's Blog</title>
-
+  <title>Working With Version Control</title>
+  <meta charset="UTF-8">
+  <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+  <link type"text/css" rel="stylesheet" href="../stylesheets/blog.css">
+<title>Class vs ID</title>
 </head>
+
+<div id="div1">
+    <a href="file:///Users/bradleyjupiterbaudot/Desktop/dbc/curriculum/JupiterLikeThePlanet.github.io/blog/blog.html"><img src="../imgs/blogbutton.jpg" height="80" width="100" alt="My Photo"/></a>
+    <header>Class vs ID</header>
+
+</div>
+
+<div id="hline"></div>
+
+ <div>
+    <nav>
+    <br><a href="file:///Users/bradleyjupiterbaudot/Desktop/dbc/curriculum/JupiterLikeThePlanet.github.io/blog/blog.html">Home</a></br>
+    <br><a href="file:///Users/bradleyjupiterbaudot/Desktop/DBC/curriculum/JupiterLikeThePlanet.github.io/blog/t1-git-blog.html">Version Control</a></br>
+    <br><a href="file:///Users/bradleyjupiterbaudot/Desktop/DBC/curriculum/JupiterLikeThePlanet.github.io/blog/css-concepts.html">Class vs ID</a></br>
+    <br><a href"#">Post 3</a></br>
+    <br><a href"#">Post 4</a></br>
+    <br><a href"#">Post 5</a></br>
+    <br><a href"#">Post 6</a></br>
+    <br><a href"#">Post 7</a></br>
+    </nav>
+  </div>
 
 <body>
 
-  <img src="#"/>
 
-
-  <header><h1>Blog Title</h1></header>
-<h4>Side Bar</h4>
-<ul>
-<aside id="sidebar">
-  <li><section id="Post_1"></section>Post 1</li>
-  <li><section id="Post_2"></section>Post 2</li>
-  <li><section id="Post_3"></section>Post 3</li>
-  <li><section id="Post_4"></section>Post 4</li>
-  <li><section id="Post_5"></section>Post 5</li>
-  <li><section id="Post_6"></section>Post 6</li>
-  <li><section id="Post_7"></section>Post 7</li>
-</aside>
-</ul>
-
+<div id="div3">
+      <h2>Best Practices</h2>
+      <h4>September 5th, 2015</h4>
   <section>
+
     <h3> What are the best practices associated with using classes vs. ids?
  </h3>
     <p>
       The simple breakdown is this:
        <ol>
-       <li>CLASSES should be used for common elements (like 'p','div','a') on a page that will likely be repeated</li>
+       <li>Classes should be used for common elements (like 'p','div','a') on a page that will likely be repeated.</li>
 
-       <li>IDs should be used for a unique page element.  No two elements should share an ID</li>
+       <li>IDs should be used for a unique page element.  No two elements should share an ID.</li>
     </ol>
+  </section>
 
-    <p> Let's look at an example of a good time to use a CLASS.  Let's say we want to make the headers of each section to be bold and have the font, Garamond, and we want the paragraphs below to be in the font Helvetica.  A class would be appropriate here because it's establishing a thematic change throughout the page.  In your styling sheet, you would enter the code as such:
+    <h3> Ok, now what about these classes?</h3>
+    <p> Let's look at an example of a good time to use a CLASS (Note that in CSS, a selector with a '.' in front indicates a Class).  So let's say we want to make the headers of each section to be bold, have the font, Garamond, and a larger font size, while we want the paragraphs below to be in the font Helvetica.  A class would be appropriate here because it's establishing a thematic change throughout the page.  In your styling sheet, you would enter the code as such:
+    </p>
+
+      <p align="center"><img class="solidgold" height="20%" width="20%" src="../imgs/classCSS.png"/></p>
+
+    <p> On your html page, you'll enter the class within an element as such:
+    </p>
+
+    <p align="center">
+    <img class="solidgold" height="40%" width="50%" src="../imgs/classHTML.png"/>
     </p>
 
     <p>
-
-    <img src="../imgs/classCSS.png"/>
-
+    And the output on your website should look like this:
     </p>
 
-    <p> On your html page, you'll enter the class in the appropriate
-    </p>
-
-    <p>
-      <img src="../imgs/classHTML.png"/>
+    <p align="center">
+    <img class="solidgold" src="../imgs/classoutput.png"/>
     </p>
 
     </section>
+    <section>
+    <h3>And these IDs I've heard so much about?</h3>
+    <p>
+    Ok! Now let's do an example of an ID. In CSS, a selector with a '#' in front indicates a ID.  Now let's say that for our page, we're going to color code our sections by giving each header their own color.  In my stylesheet, here's how I'd do this:
+    </p>
+
+
+    <p align="center">
+    <img class="solidgold" src="../imgs/idcss.png"/>
+    </p>
+
+    <p>
+    You might notice that I also adjusted the width.  I did this to tailor the background color to the span of the sentence.  Feel free to tinker around with attributes like that until you get something you like.  You can now add the ID to the element in your html page, like so:
+    </p>
+
+    <p align="center">
+    <img class="solidgold" src="../imgs/idhtml.png"/>
+    </p>
+
+
+    <p>
+    The output in your browser will look like this:
+    </p>
+
+    <p align="center">
+    <img class="solidgold" src="../imgs/idouput.png"/>
+    </p>
+  </section>
+
+  <section>
+    <h3>Hey, did I see that you added a class and an ID?</h3>
+    <p>
+      Oh, you saw that, huh?  Well, guess what?  That's good that you did!  Because you can totally do something like that!  Of course, they don't have to go together, but isn't great that you know you can?  Knowledge is power!
+    </p>
+  </section>
 
 
 
-  <footer><h6>Blog Footer</h6></footer>
 
+
+<div id="hline"></div>
+<footer><h6>Legalese, Time Stamp, Credits</h6></footer>
 </body>
+
+
 
 </html>
 

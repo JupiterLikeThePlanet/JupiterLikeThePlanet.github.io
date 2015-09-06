@@ -1,0 +1,16 @@
+
+.header{
+  font-weight: bold;
+  font-family: Garamond;
+  font-size: 2em;
+}
+
+.body {
+  font-family: Helvetica;
+}
+
+/*{
+  color:red;
+  font-family: courier;
+  font-weight: italic;
+}*/

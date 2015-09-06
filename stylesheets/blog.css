@@ -44,3 +44,12 @@ h4 {
   position: relative;
   margin-left: 10em;
 }
+
+/****************Borders**************/
+
+.solidgold{
+  border-style: groove;
+  border-color: #c5b358;
+}
+
+#ffd700;

@@ -1,12 +1,15 @@
 ##Live Site:
 
   [Home](file:///Users/bradleyjupiterbaudot/Desktop/DBC/curriculum/JupiterLikeThePlanet.github.io/blog/indexB.html "Home")
+
   file:///Users/bradleyjupiterbaudot/Desktop/DBC/curriculum/JupiterLikeThePlanet.github.io/blog/indexB.html
 
   [Main Blog Page](file:///Users/bradleyjupiterbaudot/Desktop/dbc/curriculum/JupiterLikeThePlanet.github.io/blog/blog.html "Main Blog Page")
+
   file:///Users/bradleyjupiterbaudot/Desktop/dbc/curriculum/JupiterLikeThePlanet.github.io/blog/blog.html
 
   [1st Post](file:///Users/bradleyjupiterbaudot/Desktop/DBC/curriculum/JupiterLikeThePlanet.github.io/blog/t1-git-blog.html "First Post")
+
   file:///Users/bradleyjupiterbaudot/Desktop/DBC/curriculum/JupiterLikeThePlanet.github.io/blog/t1-git-blog.html
 
 

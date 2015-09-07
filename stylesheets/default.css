@@ -42,11 +42,13 @@ h1 {
 
 nav {
   float:left;
+  position: absolute;
 }
 
 .left {
   margin-left: 23em;
 }
+
 
 #hline {
   width:100%;

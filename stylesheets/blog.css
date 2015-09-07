@@ -12,7 +12,21 @@ header{
 */
 
 body{
-  margin-left:auto;
+  margin-left:0.5em;
+}
+
+main {
+  margin-left: 1em;
+}
+
+li {
+  font-family: Helvetica;
+  color: #A2AFB8;
+}
+
+span{
+  font-family: Helvetica;
+  color: #00A693
 }
 
 /**************HEADER**************/

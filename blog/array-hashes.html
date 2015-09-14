@@ -7,7 +7,7 @@
 </head>
 <div id="div1">
     <a href="http://jupiterliketheplanet.github.io/blog/blog.html"><img src="../imgs/blogbutton.jpg" height="80" width="100" alt="Blog Home"/></a>
-    <header>Diversity & Disparaties In Tech</header>
+    <header>Arrays and Hashes</header>
 </div>
 
 <div id="hline"></div>
@@ -16,23 +16,60 @@
     <br><a href="http://jupiterliketheplanet.github.io/blog/blog.html">Home</a></br>
     <br><a href="http://jupiterliketheplanet.github.io/blog/t1-git-blog.html">Version Control</a></br>
     <br><a href="http://jupiterliketheplanet.github.io/blog/css-concepts.html">Class vs ID</a></br>
-    <br><a href"#">Arrays & Hashes</a></br>
-    <br><a href"#">Diversity in Tech</a></br>
+    <br><a href="http://jupiterliketheplanet.github.io/blog/array-hashes.html">Arrays & Hashes</a></br>
+    <br><a href="http://jupiterliketheplanet.github.io/blog/divtech.html">Diversity in Tech</a></br>
     <br><a href"#">Post 5</a></br>
     <br><a href"#">Post 6</a></br>
     <br><a href"#">Post 7</a></br>
     </nav>
+
 </div>
 
 <body>
   <div id="div3">
-
+    <h3> Data Structures </h3>
+    <h4> September 13th 2015</h4>
   <section>
     <h3>Arrays</h3>
-    <p>
-    </p>
-  </section>
+    <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">letters <span style="color: #333333">=</span> <span style="color: #333333">[</span>'a','b','c'<span style="color: #333333">]</span>
+</pre></div>
 
+    <p>
+      Awww, what a cute litte variable.  But what are those [ ] for?  Glad you asked.  That's an array. Arrays are ordered collections.  Like in the example above, if we call upon the variable 'letters', the array [a,b,c] will come up, just like the same order we put it there!
+      Ok, here's a little jargon: Arrays are an integered index.  You might be saying, "Uhh...what?" Don't worry.  I've got your back.  This just means that each item in the array is assigned a number based on it's order. "Oh, you mean like a=1, b=2 -" Let me stop you there. Because you're on the right track.  Except that array indexing starts at 0.  Here, let me show you:
+    </p>
+    <p align="center">
+      <img class="solidgold" height="100px" width="500px" src="../imgs/array_indexing.png">
+    </p>
+    <p>
+      So, how would I call upon individual elements? Well, like so:
+    </p>
+    <p align="center">
+      <img class="solidgold" src="../imgs/call_array.png">
+    </p>
+    <p> Let's talk about a couple interesting points up there. Did you notice that when a[0,2], the element stored in place 2 was not called? That's because the second value listed is not inclusive.  It calls all values from 0 up to 2.  That's also how the three dots work in a[2...5].  Three dots are exclusive.  However, two dots are inclusive, which is why 'f' is returned to us in a[2..5].
+
+  </section>
+  <section>
+    <h3>Hashes</h3>
+    <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">my_info <span style="color: #333333">=</span> {
+    <span style="color: #AA6600">:first_name</span> <span style="color: #333333">=&gt;</span> <span style="background-color: #fff0f0">&quot;Bugs&quot;</span>,
+    <span style="color: #AA6600">:last_name</span> <span style="color: #333333">=&gt;</span> <span style="background-color: #fff0f0">&quot;Bunny&quot;</span>,
+    <span style="color: #AA6600">:hometown</span> <span style="color: #333333">=&gt;</span> <span style="background-color: #fff0f0">&quot;Acme Acres&quot;</span>,
+    <span style="color: #AA6600">:age</span> <span style="color: #333333">=&gt;</span> <span style="color: #0000DD; font-weight: bold">75</span>
+    }
+    </pre></div>
+    <p>
+    Look at that lovely example above!  As you could guess from the header of this section, that's a hash. So, what makes that different than the array?  Hashes consist of key:value pairs. So instead of calling upon an integer like a[0] to get 'a', we would call up my_info(hometown) to get "Acme Acres".
+    </p>
+
+    <p align="center">
+      <img class="solidgold" src="../imgs/hash_ex.png">
+    </p>
+    <p>
+    They also use these guys { } instead of these guys [ ] when setting up the pairs. Hashes in the most recent version of ruby are also ordered collections.  I guess that makes hashes and arrays a tad more similar.
+
+    </p>
 </div>
 
 </body>

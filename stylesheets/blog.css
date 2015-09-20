@@ -11,11 +11,18 @@ header{
 #A2AFB8
 */
 
+
+/*.top_left{
+  margin-top: -50px;
+  margin-left: 23em;
+}*/
+
+
 body{
   margin-left:0.5em;
 }
 
-main {
+main{
   margin-left: 1em;
 }
 

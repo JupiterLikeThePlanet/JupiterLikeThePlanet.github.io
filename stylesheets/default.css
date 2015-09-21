@@ -58,6 +58,13 @@ nav {
 
 /***************** Horizontal lines *************/
 /****Under Header*****/
+
+#hline {
+   width:100%;
+   height: 1px;
+   background-color: black;
+ }
+
 #hline1{
   width:22%;
   height: 3px;

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ruby Class</title>
+  <meta charset="UTF-8">
+  <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+  <link type"text/css" rel="stylesheet" href="../stylesheets/blog.css">
+</head>
+
+  <div id="div1">
+    <a href="http://jupiterliketheplanet.github.io/blog/blog.html"><img src="../imgs/blogbutton.jpg" height="80" width="100" alt="Blog Home"/></a>
+    <header>Ruby Classes</header>
+
+  </div>
+
+  <div id="hline"></div>
+
+  <div>
+    <nav>
+    <br><a href="http://jupiterliketheplanet.github.io/blog/blog.html">Home</a></br>
+    <br><a href="http://jupiterliketheplanet.github.io/blog/t1-git-blog.html">Version Control</a></br>
+    <br><a href="http://jupiterliketheplanet.github.io/blog/css-concepts.html">Class vs ID</a></br>
+    <br><a href="http://jupiterliketheplanet.github.io/blog/array-hashes.html">Arrays & Hashes</a></br>
+    <br><a href="http://jupiterliketheplanet.github.io/blog/divtech.html">Diversity in Tech</a></br>
+    <br><a href"http://jupiterliketheplanet.github.io/blog/enumerable-methods.html">Enumerable: Map</a></br>
+    <br><a href"http://jupiterliketheplanet.github.io/blog/ruby-classes.html">Ruby Classes</a></br>
+    <br><a href"#">Post 7</a></br>
+    </nav>
+  </div>
+
+<body>
+  <div id="div3">
+    <h2> First Class Objects </h2>
+    <h4> September 25th 2015 </h4>
+<section>
+<h3>What's a Class?</h3>
+<section>
+<p>
+  Classes are like objects, except we get a chance to define things about them.  Their like super objects consistent of traits made out of methods and other objects.  We're creating something to play with in essence. Think about a dog.  What's breed and age is it... did you think about that stuff yet?  Great!  Because right there in your head, you created Class Dog and then initialized 2 of it's inherent traits!  Let's see what that would look like:
+</p>
+<p align="center">
+  <img class="solidgold" src="../imgs/Class_Step_1.png"/>
+</p>
+<p> "Woah, woah! Slow down."  Ok, I get it! I threw a couple of things up there I need to explain.  First, to create a class type in "Class" followed by a CAPITAL name for the thing you want to define as a class.  Why capital?  Because when you call it, the computer will see that you're calling upon a class (e.g. Dog.new creates a new class!). Then you see under that a method called initialize.  That's the inherit characteristics we are given to Class Dog.  And it has parameters (that's the stuff inside the ()'s).  We have age and breed which will be the first traits class will have off the bat.  Inside the method you see @'s in front of the parameter names and then equal to the names sans @.  What is this!  We'll go over that in the next part, but before we go, let me just say that this is only the first part of creating a class!
+</p>
+
+</section>
+
+<section>
+<h3>What's up with the @'s?</h3>
+<p>
+  That's the sign of an instance variable!  Yes, there are different kinds of variables.  A local variable (without the @ sign [e.g.] age) can only be used within it's method.  But slap and @ in front of the guys like so (@age) and you got yourself an instance variable.  Wanna know what it does? Well, sit down because this is gonna be heavy: You can retain the value of your i.v. across methods.  YES!  I can keep a value going for more than just 1 method!
+</p>
+<p align="center">
+  <img class="solidgold" src="../imgs/Class_Step_2.png"/>
+</p>
+<p> So I created a method for an action a dog would do.  You know, "roll over", it's a classic.  I put a conditional in there that relies on a value from the initialize method.  So if I were to put some code into action, it'd do something like this:
+<p align="center">
+  <img class="solidgold" src="../imgs/Class_Step_3.png"/>
+</p>
+<p>It would puts what we want it to, because it retained the value of the first method!</p>
+</section>
+
+<section>
+<h3>Methods also have instances!</h3>
+<p>
+Let's not forget instance methods!  You've already seen it, but might be unaware of it by name.  The roll method is an instance method.  Using the instance variable of @age within roll works with the class within that instance!
+</p>
+</section>
+
+</body>
+
+<footer>
+  <!--Social Buttons here-->
+<div id="hline5"></div>
+
+ <a id="share-buttons" href="http://www.linkedin.com/" target="LinkedIN">
+    <img src="../imgs/silver_buttons/linkedin.png" alt="LinkedIn" />
+  </a>
+  <a id="share-buttons" href="http://www.github.com/jupiterliketheplanet" target="_blank">
+    <img src="../imgs/silver_buttons/grey_git.png" alt="GitHub" />
+  </a>
+
+  <a id="share-buttons" href="https://twitter.com/jupiterbaudot" target="_blank">
+    <img src="../imgs/silver_buttons/twitter.png" alt="Twitter" />
+  </a>
+<div id="hline5"></div>
+</footer>
+
+</html>

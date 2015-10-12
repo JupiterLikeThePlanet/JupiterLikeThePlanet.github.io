@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Basics Cheat Sheet</title>
+  <meta charset="UTF-8">
+  <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+  <link type"text/css" rel="stylesheet" href="../stylesheets/blog.css">
+  <link type"text/css" rel="stylesheet" href="../stylesheets/cheat_stylesheet.css">
+</head>
+
+  <div id="div1">
+    <a href="http://jupiterliketheplanet.github.io/blog/blog.html"><img src="../imgs/blogbutton.jpg" height="80" width="100" alt="Blog Home"/></a>
+    <header>JS Basics Cheat Sheet</header>
+
+</div>
+
+  <div id="hline"></div>
+
+  <div>
+    <nav>
+    <br><a href="http://jupiterliketheplanet.github.io/blog/blog.html">Home</a></br>
+    <br><a href="http://jupiterliketheplanet.github.io/blog/t1-git-blog.html">Version Control</a></br>
+    <br><a href="http://jupiterliketheplanet.github.io/blog/css-concepts.html">Class vs ID</a></br>
+    <br><a href="http://jupiterliketheplanet.github.io/blog/array-hashes.html">Arrays & Hashes</a></br>
+    <br><a href="http://jupiterliketheplanet.github.io/blog/divtech.html">Diversity in Tech</a></br>
+    <br><a href="http://jupiterliketheplanet.github.io/blog/enumerable-methods.html">Enumerable: Map</a></br>
+    <br><a href="http://jupiterliketheplanet.github.io/blog/ruby-classes.html">Ruby Classes</a></br>
+    <br><a href="http://jupiterliketheplanet.github.io/blog/javascript.html">Javascript vs Ruby</a></br>
+    <br><a href="http://jupiterliketheplanet.github.io/projects/cheat_sheet.html">JS Cheat Sheet</a></br>
+    </nav>
+  </div>
+
+<body>
+  <div id="div3">
+    <h2> A few basics to remember</h2>
+    <h4> October 11th 2015 </h4>
+<section>
+<body>
+
+<h4> A Quick Note for DBC Readers  </h4>
+<p><span>My computer crashed this week, so I didn't get the chance to put the time I wanted into this and did my best borrowing someone else's computer<span></p>
+
+<div id="box_1">
+<h3><a href="http://www.w3schools.com/js/js_arrays.asp">Arrays</a></h3>
+<p>
+<ul>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat">concat()</a>: combine string or arrays</li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice">slice()</a>: returns an array based on the range of indices </li>
+  <li><a href = "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join">join()</a> : combines elements in an array</li>
+  <li><a href"http://www.w3schools.com/jsref/jsref_sort.asp">sort()</a> : sorts arrays in alphabetical order </li>
+  <li><a href="http://www.w3schools.com/jsref/jsref_length_array.asp">length</a> : lists the length in a string or index of an array</li>
+  <li><a href="http://www.w3schools.com/jsref/jsref_length_array.asp">splice()</a> : adds and removes items from an array, returning the removed ones</li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop">pop() </a>: remove last element in an array</li>
+  <li><a href="http://www.w3schools.com/jsref/jsref_push.asp">push()</a> : add an element to the end of an array</li>
+  <li><a href="http://www.w3schools.com/jsref/jsref_tostring_array.asp">toString()</a>: convert content to string</li>
+  <li><a href="http://www.w3schools.com/jsref/jsref_reverse.asp">reverse()</a>: reverse elements of an array</li>
+</ul>
+</p>
+
+</div>
+
+<div id="box_2">
+<h3><a href="http://www.w3schools.com/js/js_functions.asp"> Functions</a></h3>
+<p> A function can store variable/value or perform tasks.  Parenthesis required, though parameters don't need to be set. Functions follow this format:
+<p>
+<ul>
+  <li>function name_of_function (arguments) {
+<br>statements to execute when
+<br>function is called;
+<br>} </li>
+</ul>
+</p>
+</div>
+
+<div id="box_3">
+<h3><a href="http://codingsight.com/iterating-over-javascript-arrays/"> Iterations</a></h3>
+
+<p>There are couple of ways to iterate through an array.  The first presented here is a sequential for iteration.  It creates a counter using "i=0", saying as long as i is less than the length of the array (or string, etc.) run the code block and at the end of each block add 1 to i.  </p>
+  <ul>
+    <li> for (var i = 0; i < arrayLength; i++) {
+    alert(myStringArray[i]);} </li>
+  </ul>
+
+<p>
+Then there's the for...in loop.  In the example below, it's stating for variable key in array do the following code block.
+<ul>
+  <li>for (var key in array) {}</li>
+</ul>
+</p>
+</div>
+
+
+<div id="box_4">
+<h3><a href="http://www.w3schools.com/js/js_numbers.asp">Numbers</a></h3>
+<p>
+  <ul>
+    <li><a href="http://www.w3schools.com/jsref/jsref_random.asp"> Math.floor() :</a> rounds decimal down to nearest integer </li>
+    <li><a href="http://www.w3schools.com/jsref/jsref_floor.asp"> Math.random() :</a> returns a random value betweem 0 & 1 </li>
+</p>
+</div>
+
+<div id="box_5">
+<h3><a href="http://www.w3schools.com/js/js_operators.asp">Operators</a></h3>
+<h5>Assignment</h5>
+<p>
+<ul>
+ <li> += (or ++): adds two numeric operands and assigns the result to the first operand
+<li> –= (or --) : subtracts the second operand from the first, and assigns the result to the first</li>
+<li> *= : multiplies two operands, assigns the result to the first </li>
+<li> /= : divides the first operand by the second, assigns the result to the first </li>
+<li> %= : finds the modulus of two numeric operands, and assigns the result to the  </li>
+</ul>
+</p>
+
+<h5>Comparison</h5>
+<p>
+<ul>
+ <li> == : returns true if the operands are equal </li>
+ <li> != : returns true if the operands are not equal</li>
+ <li> === : returns true if the operands are equal and the same data type</li>
+ <li> !== : returns true if the operands are not equal and/or not the same data type </li>
+</ul>
+</p>
+</div>
+
+<div id="box_6">
+<h3><a href="http://www.w3schools.com/js/js_strings.asp"> Strings</a></h3>
+<p>
+ <ul>
+  <li><a href= "http://www.w3schools.com/jsref/jsref_indexof.asp">indexOf</a>: returns the position of the first occurrence of a specified value in a string </li>
+   <li><a href="http://www.w3schools.com/jsref/jsref_length_string.asp">length</a> : lists the length in a string or index of an array</li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split">split()</a>: splits a string into an array</li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase">toLowerCase()</a>: brings type to lower case</li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase">toUppperCase()</a>: brings type to upper case</li>
+
+</p>
+</div>
+
+</body>
+
+<footer>
+  <!--Social Buttons here-->
+<div id="hline5"></div>
+
+ <a id="share-buttons" href="http://www.linkedin.com/" target="LinkedIN">
+    <img src="../imgs/silver_buttons/linkedin.png" alt="LinkedIn" />
+  </a>
+  <a id="share-buttons" href="http://www.github.com/jupiterliketheplanet" target="_blank">
+    <img src="../imgs/silver_buttons/grey_git.png" alt="GitHub" />
+  </a>
+
+  <a id="share-buttons" href="https://twitter.com/jupiterbaudot" target="_blank">
+    <img src="../imgs/silver_buttons/twitter.png" alt="Twitter" />
+  </a>
+<div id="hline5"></div>
+</footer>
+
+</html>

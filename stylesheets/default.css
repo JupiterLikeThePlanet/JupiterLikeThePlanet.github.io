@@ -62,6 +62,8 @@ nav {
   margin-left: 23em;
 }
 
+
+
 /***************** Horizontal lines *************/
 /****Under Header*****/
 
@@ -134,4 +136,49 @@ a:link{
 a:visited{
   color: #A2AFB8;
   }
+
+/********************Colored boxes*******************/
+
+.greenBox {
+  background-color: #00A693;
+  color: #00A693;
+  width: 304px;
+  height: 228px;
+}
+
+
+
+
+
+  
+.highlight {
+    -webkit-box-shadow: 0 304 228px #00A693;
+    -moz-box-shadow: 0 304 228px #00A693;
+    box-shadow: 0 304 228px #00A693;
+    cursor:pointer;
+}
+
+/*Script kiddie test right here
+  .box-caption-text{
+  color:#ffffff;
+  width:220px;
+    height:167px;
+    overflow:hidden;
+    position:absolute;
+    left:0px;
+    top:0px;
+    z-index:95;
+  font-size:12px;
+  line-height:16px;
+    background-color:transparent;
+    filter:alpha(opacity=0);
+    padding:0px 15px;
+    opacity:0;
+    display: inline-block; 
+    -webkit-transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -o-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+  transition: opacity .25s ease-in-out;
+  }*/
 

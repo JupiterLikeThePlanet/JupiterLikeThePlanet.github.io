@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+
+  <title>Into The Digital Wild</title>
+</head>
+
+
+<body>
+<div id="hline1"></div>
+<div id="hline4"></div>
+
+  <nav>
+    <header><h1>Into The Digital Wild</h1></header>
+    <img src="../imgs/blogbutton.jpg" height="80" width="100" alt="Blog Home"/>
+    <p>Pedagological break downs
+      <br>
+        (a.k.a How stuff works)
+      <br>
+    </p>
+  <div id="hline2"></div>
+
+  <!-- Blog post side bar here -->
+    <br>
+    <a href="#loops">Comparing Loops</a>
+    <br>
+    <br>
+    <a href="#arrays">Arrays and Hashes</a>
+    <br>
+    <br>
+    <a href="#diversity">Diversity In Tech</a>
+    <br>
+    <br>
+    <a href="#map">Enumerable: Map</a>
+    <br>
+    <br>
+    <a href="#classes">Ruby Classes</a>
+    <br>
+  </nav>
+
+
+
+
+  <div id='post_positioning'>
+
+  <div class="post">
+    <h2 id="loops">Comparing Loops</h2>
+
+    <section>
+    <h3> While loops</h3>
+
+    <p>
+      While loops are generally executed upon a condition being true.  Once the statement is no longer true, the loop ends (except in the case of an infinite loop, but that's a mistake!).  In ruby, a while loop begins with while, followed by a conditional statement (usually a comparison operator or a boolean value) and then the keyword "do".  The code block beneath executes each time during the loop until the condition is met, then breaks.  The loop itself will look something like this:
+    </p>
+
+    <p class="align_image">
+      <img class="solidgold" alt="oops!" src="../imgs/ruby_while.png" />
+    </p>
+
+    <p>
+      In javascript, a while loop might look a bit different:
+    <p class="align_image"><img class="solidgold" alt="oops!" src="../imgs/js_while.png"/></p>
+
+    <p>
+      Notice the syntax is a bit more detailed here.
+    </p>
+
+    <h3>For loops</h3>
+
+    <p>
+      In ruby, the for loop is similiar to the "loop.each do |variable|[code]" in heart, but looks like this:
+    </p>
+
+    <p class="align_image"><img class="solidgold" src="../imgs/ruby_for.png" alt="oops!"/></p>
+
+    <p>
+      In javascript, for loops will be more frequently used.  It likes to use 3 parameters.  The first argument gets executed before the loop begins, the second will define the condition that runs the loop, and the third is an action executed during each loop.  A common for loop in javascript is a counter loop.
+    </p>
+
+    <p class="align_image"><img class="solidgold" src="../imgs/js_while.png" alt="oops!"/></p>
+
+
+    <h3>Catching the differences?</h3>
+
+    <p>
+      I'm sure you saw that js looked like a bunch of brackets and semicolons slopped together.  That's the obvious difference.  But not all the differences are at face value.  In ruby, you can use "for" and "in" to access array and enum objects, but in js does not work on arrays.  Another difference, is while ruby has a few keywords on deck for creating loops, js prominently relies on just the above two. And while that may seem limiting, if you put in the elbow grease, you can actually pull off the same kind of loops as exists in ruby.
+    </p>
+  </section>
+  <!-- closing div for Loop post -->
+  </div>
+
+    <div class="post">
+
+    <h2 id='arrays'> Arrays vs Hashes</h2>
+
+      <h4> Data Structures </h4>
+
+  <section>
+
+    <h3>Arrays</h3>
+
+        <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">letters <span style="color: #333333">=</span> <span style="color: #333333">[</span>'a','b','c'<span style="color: #333333">]</span>
+        </pre></div>
+
+    <p>
+      Awww, what a cute litte variable.  But what are those [ ] for?  Glad you asked.  That's an array. Arrays are ordered collections.  Like in the example above, if we call upon the variable 'letters', the array [a,b,c] will come up, just like the same order we put it there!
+      Ok, here's a little jargon: Arrays are an integered index.  You might be saying, "Uhh...what?" Don't worry.  I've got your back.  This just means that each item in the array is assigned a number based on it's order. "Oh, you mean like a=1, b=2 -" Let me stop you there. Because you're on the right track.  Except that array indexing starts at 0.  Here, let me show you:
+    </p>
+
+      <p class="align_image">
+        <img class="solidgold" height="100" width="500" src="../imgs/array_indexing.png" alt="oops!"/>
+      </p>
+
+    <p>
+      So, how would I call upon individual elements? Well, like so:
+    </p>
+
+      <p class="align_image">
+        <img class="solidgold" src="../imgs/call_array.png" alt="oops!"/>
+      </p>
+
+    <p>
+      Let's talk about a couple interesting points up there. Did you notice that when a[0,2], the element stored in place 2 was not called? That's because the second value listed is not inclusive.  It calls all values from 0 up to 2.  That's also how the three dots work in a[2...5].  Three dots are exclusive.  However, two dots are inclusive, which is why 'f' is returned to us in a[2..5].
+    </p>
+
+  </section>
+
+  <section>
+    <h3>Hashes</h3>
+      <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">my_info <span style="color: #333333">=</span> {
+      <span style="color: #AA6600">:first_name</span> <span style="color: #333333">=&gt;</span> <span style="background-color: #fff0f0">&quot;Bugs&quot;</span>,
+      <span style="color: #AA6600">:last_name</span> <span style="color: #333333">=&gt;</span> <span style="background-color: #fff0f0">&quot;Bunny&quot;</span>,
+      <span style="color: #AA6600">:hometown</span> <span style="color: #333333">=&gt;</span> <span style="background-color: #fff0f0">&quot;Acme Acres&quot;</span>,
+      <span style="color: #AA6600">:age</span> <span style="color: #333333">=&gt;</span> <span style="color: #0000DD; font-weight: bold">75</span>
+      }
+      </pre></div>
+
+    <p>
+      Look at that lovely example above!  As you could guess from the header of this section, that's a hash. So, what makes that different than the array?  Hashes consist of key:value pairs. So instead of calling upon an integer like a[0] to get 'a', we would call up my_info(hometown) to get "Acme Acres".
+    </p>
+
+    <p class="align_image">
+      <img class="solidgold" src="../imgs/hash_ex.png" alt="oops!"/>
+    </p>
+
+    <p>
+      They also use these guys { } instead of these guys [ ] when setting up the pairs. Hashes in the most recent version of ruby are also ordered collections.  I guess that makes hashes and arrays a tad more similar.
+    </p>
+  </section>
+    <!-- closing div for Loop post -->
+  </div>
+
+  <div class="post">
+    <h2 id='diversity'>Diversity In Tech</h2>
+
+  <section>
+    <h3> Defining what's disparate </h3>
+
+    <p> One of my favorite sites, known for breaking down information graphically, is<a href="http://www.informationisbeautiful.net/"> Information Is Beautiful</a>. Here's a great example of their work on diversity in tech:</p>
+
+    <br>
+
+    <p class="align_image">
+      <a href="http://www.informationisbeautiful.net/visualizations/diversity-in-tech/"><img src="../imgs/Diversity-In-Tech_2015.png" height="1300" width="1000" alt="Diversity in Tech"/></a>
+    </p>
+
+    <p>
+      Quoting the site, here is the how and what of their measure: "Which tech companies employ the most people of colour and which are more of a whitewash? We sifted through global employee data from 18 tech firms, ranked them by race and gender, then compared against the general US population."  Extrapolating from this data, white people, for all intents and purposes, are represented proportionally to the population.  If I had to be specific, they are represented just shy of their actual numbers.  Asians are extensively represented.  For example, in the realm of social media sites, at the lowest they are represented seven times more than is proportional to their population size in this country.
+    </p>
+
+    <p>
+      So when we talk about disparities in diversity it's usually about women, latinos, and blacks.  Each of those groups are underrepresented by a significant margin.
+    </p>
+
+    </section>
+
+    <section>
+
+    <h3> Examples of disparity </h3>
+
+    <p>
+      Here are some quotes on disparities going on within the tech field:
+    </p>
+
+    <ul>
+      <li><span> "Only about 11% of U.S. firms with venture-capital backing in 2009 had current or former female CEOs or female founders, according to data from Dow Jones VentureSource." Shira Ovide,<a href="http://blogs.wsj.com/venturecapital/2010/08/27/addressing-the-lack-of-women-leading-tech-start-ups/"> 'Addressing The Lack Of Women Leading Tech Start-Ups'</a>, Wall Street Journal</span></li>
+
+
+      <li><span>
+      "...new research that shows Hispanics earn $16,353 a year less on average than their colleagues who are not Hispanic.  In the same high-skilled positions such as computer programmers and software developers, Asians make $8,146 less than whites and blacks $3,656 less than whites, according to the report from the American Institute for Economic Research." - Jessica Guynn, <a href="http://www.usatoday.com/story/tech/2014/10/09/high-tech-pay-gap-hispanics-asians-african-americans/16606121/"> USA TODAY</a>
+      </span></li>
+    </ul>
+
+
+  </section>
+
+  <section>
+   <h3> What helps? </h3>
+
+    <p>
+      These answers are somewhat idealist, but I wanted to address aspects that affect us at a more personal level, since that's more or less all we can be more certain to change.
+    </p>
+
+    <p>
+      Keeping an open mind and awareness.  This concerns the idea of 'metacognition', or self awareness.  We, as human beings (ALL OF US), are capable of unconcious bias.    One must open to evaluating themselves and their actions  We should keep our ears open to outside ideas and actively search for problem areas of our field.  When presented with a disparity, like pay gaps for minorities, amelliorate the situation by dispersing equal pay.
+    </p>
+
+    <p>
+      The Cultural Issue:  I'll use the gender gap to illustrate this point. It is often cited that girls are discouraged (or not encouraged) from pursuing interests in math and science because it doesn't play into the ideas of what it means to be a women.  Essentially, women are being told they should be one thing over another because that's what society expects of them.  I get it. I'm a scrawny, nerdy beta male who despises sports and mainstream ideas of manliness.  We're all told sold some narrative as a society, but as we become more informed, those narratives should come under challenge and be more open to fluid roles between gender, race, or whatever 'thing' people will have you defined as.  More importantly, those who are self aware and informed should vocal about these issues and behave accordingly.  You know, lead by example.  </p>
+    <p>
+      But more importantly on a larger scope, there should be a bigger emphasis on STEM careers.
+    </p>
+
+    </section>
+  <!-- closing div for Diversity post -->
+  </div>
+
+  <div class="post">
+    <h2 id='map'>Enumberable Method: Map</h2>
+    <h4> map { |obj| block } -> array </h4>
+
+    <section>
+
+    <h3> So what are we talking about here? </h3>
+    <p>
+      Enumerables!? Isn't that like when something is too high to count?  Actually, in ruby, enumerables are actions (methods in the lingo) that help us to iterate over individual elements in an array.  We're going to talk about one of those methods called '.map'.  If you're already familiar with the method '.each', then you're going to notice how similiar the two are.
+    </p>
+    </section>
+
+    <section>
+
+    <h3> Alright, you wanna explain the differences then? </h3>
+
+    <p>
+      Sure!  So, if you've seen '.each', it goes over one element at a time in array and does whatever is in the code block.  Well, '.map' does that too!  Except that while '.each' returns the original input it was given, '.map' returns a new array with the result of the code block
+    </p>
+    </section>
+
+    <section>
+
+    <h3> Care to illustrate that buddy? </h3>
+    <p>
+      Absolutely.  On the top you will see an example of '.each' and the bottom will show '.map'
+    </p>
+
+    <p class="align_image">
+      <img class="solidgold" src="../imgs/each_method.png" alt="oops!"/>
+    </p>
+
+    <p class="align_image">
+      <img class="solidgold" src="../imgs/map_method.png" alt="oops!"/>
+    </p>
+
+    </section>
+    <!-- closing div for Enumerable post -->
+  </div>
+
+  <div class="post">
+    <h2 id="classes"> Ruby Classes </h2>
+      <h4>First Class Objects</h4>
+
+  <section>
+    <h3>What's a Class?</h3>
+
+    <p>
+      Classes are like objects, except we get a chance to define things about them.  Their like super objects consistent of traits made out of methods and other objects.  We're creating something to play with in essence. Think about a dog.  What's breed and age is it... did you think about that stuff yet?  Great!  Because right there in your head, you created Class Dog and then initialized 2 of it's inherent traits!  Let's see what that would look like:
+    </p>
+
+    <p class="align_image">
+      <img class="solidgold" src="../imgs/Class_Step_1.png" alt="oops!"/>
+    </p>
+
+    <p>
+      "Woah, woah! Slow down."  Ok, I get it! I threw a couple of things up there I need to explain.  First, to create a class type in "Class" followed by a CAPITAL name for the thing you want to define as a class.  Why capital?  Because when you call it, the computer will see that you're calling upon a class (e.g. Dog.new creates a new class!). Then you see under that a method called initialize.  That's the inherit characteristics we are given to Class Dog.  And it has parameters (that's the stuff inside the ()'s).  We have age and breed which will be the first traits class will have off the bat.  Inside the method you see @'s in front of the parameter names and then equal to the names sans @.  What is this!  We'll go over that in the next part, but before we go, let me just say that this is only the first part of creating a class!
+    </p>
+
+  </section>
+
+  <section>
+    <h3>What's up with the @'s?</h3>
+    <p>
+      That's the sign of an instance variable!  Yes, there are different kinds of variables.  A local variable (without the @ sign [e.g.] age) can only be used within it's method.  But slap and @ in front of the guys like so (@age) and you got yourself an instance variable.  Wanna know what it does? Well, sit down because this is gonna be heavy: You can retain the value of your i.v. across methods.  YES!  I can keep a value going for more than just 1 method!
+    </p>
+
+    <p class="align_image">
+      <img class="solidgold" src="../imgs/Class_Step_2.png" alt="oops!"/>
+    </p>
+
+    <p>
+      So I created a method for an action a dog would do.  You know, "roll over", it's a classic.  I put a conditional in there that relies on a value from the initialize method.  So if I were to put some code into action, it'd do something like this:
+    </p>
+
+    <p class="align_image">
+      <img class="solidgold" src="../imgs/Class_Step_3.png" alt="oops!"/>
+    </p>
+
+    <p>
+      It would puts what we want it to, because it retained the value of the first method!
+    </p>
+</section>
+
+    <section>
+      <h3>Methods also have instances!</h3>
+        <p>
+          Let's not forget instance methods!  You've already seen it, but might be unaware of it by name.  The roll method is an instance method.  Using the instance variable of @age within roll works with the class within that instance!
+        </p>
+    </section>
+    <!-- closing div for Ruby classes post -->
+  </div>
+
+  <!--end of post_positioning div -->
+  </div>
+
+<footer>
+  <!--Social Buttons here-->
+<div class="hline5"></div>
+
+ <a class="share-buttons" href="http://www.linkedin.com/" target="LinkedIN">
+    <img src="../imgs/silver_buttons/linkedin.png" alt="LinkedIn"/>
+  </a>
+  <a class="share-buttons" href="http://www.github.com/" target="_blank">
+    <img src="../imgs/silver_buttons/grey_git.png" alt="GitHub"/>
+  </a>
+
+  <a class="share-buttons" href="https://twitter.com/" target="_blank">
+    <img src="../imgs/silver_buttons/twitter.png" alt="Twitter"/>
+  </a>
+<div class="hline5"></div>
+</footer>
+
+</body>
+
+
+
+</html>

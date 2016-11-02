@@ -5,7 +5,18 @@
  */
 
 .center-img {
-    margin-left: 466px;
+    /*margin-left: 466px;*/
+    margin: 0 auto
+}
+
+.filler-bg {
+    background-color: #00A693;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.bg-green {
+    background-color: #00A693;
 }
 
 html,
